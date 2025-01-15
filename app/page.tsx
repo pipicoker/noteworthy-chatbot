@@ -137,7 +137,7 @@ export default function Chat() {
 
                     {error && (
                       <div className="w-full items-center flex justify-center gap-3">
-                        <div>An error  occured</div>
+                        <div>An error  occured {error.message}</div>
                         <button className="underline" type="button" onClick={() => reload()}>retry</button>
                       </div>
                     )}
